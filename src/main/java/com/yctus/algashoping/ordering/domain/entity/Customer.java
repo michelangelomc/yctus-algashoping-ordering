@@ -65,6 +65,95 @@ public class Customer implements Serializable {
     private OffsetDateTime archivedAt;
     private Integer loyaltyPoints;
 
+    public UUID id() {
+        return id;
+    }
+
+    public String fullName() {
+        return fullName;
+    }
+
+    public LocalDate birthDate() {
+        return birthDate;
+    }
+
+    public String email() {
+        return email;
+    }
+
+    public String phone() {
+        return phone;
+    }
+
+    public String document() {
+        return document;
+    }
+
+    public Boolean isPromotionNotificationAllowed() {
+        return promotionNotificationAllowed;
+    }
+
+    public Boolean isArchived() {
+        return archived;
+    }
+
+    public OffsetDateTime registeredAt() {
+        return registeredAt;
+    }
+
+    public OffsetDateTime archivedAt() {
+        return archivedAt;
+    }
+
+    public Integer loyaltyPoints() {
+        return loyaltyPoints;
+    }
+
+    private void setId(UUID id) {
+        this.id = id;
+    }
+
+    private void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    private void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    private void setEmail(String email) {
+        this.email = email;
+    }
+
+    private void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+
+    private void setDocument(String document) {
+        this.document = document;
+    }
+
+    private void setPromotionNotificationAllowed(Boolean promotionNotificationAllowed) {
+        this.promotionNotificationAllowed = promotionNotificationAllowed;
+    }
+
+    private void setArchived(Boolean archived) {
+        this.archived = archived;
+    }
+
+    private void setRegisteredAt(OffsetDateTime registeredAt) {
+        this.registeredAt = registeredAt;
+    }
+
+    private void setArchivedAt(OffsetDateTime archivedAt) {
+        this.archivedAt = archivedAt;
+    }
+
+    private void setLoyaltyPoints(Integer loyaltyPoints) {
+        this.loyaltyPoints = loyaltyPoints;
+    }
+
     public void addLoayltyPoints(Integer points) {
     }
 
@@ -90,94 +179,6 @@ public class Customer implements Serializable {
 
     public void changeEmail(String email) {
         this.setEmail(email);
-    }
-
-    private UUID getId() {
-        return id;
-    }
-
-    private void setId(UUID id) {
-        this.id = id;
-    }
-
-    private String getFullName() {
-        return fullName;
-    }
-
-    private void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    private LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    private void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    private String getEmail() {
-        return email;
-    }
-
-    private void setEmail(String email) {
-        this.email = email;
-    }
-
-    private String getPhone() {
-        return phone;
-    }
-
-    private void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    private String getDocument() {
-        return document;
-    }
-
-    private void setDocument(String document) {
-        this.document = document;
-    }
-
-    private Boolean getPromotionNotificationAllowed() {
-        return promotionNotificationAllowed;
-    }
-
-    private void setPromotionNotificationAllowed(Boolean promotionNotificationAllowed) {
-        this.promotionNotificationAllowed = promotionNotificationAllowed;
-    }
-
-    private Boolean getArchived() {
-        return archived;
-    }
-
-    private void setArchived(Boolean archived) {
-        this.archived = archived;
-    }
-
-    private OffsetDateTime getRegisteredAt() {
-        return registeredAt;
-    }
-
-    private void setRegisteredAt(OffsetDateTime registeredAt) {
-        this.registeredAt = registeredAt;
-    }
-
-    private OffsetDateTime getArchivedAt() {
-        return archivedAt;
-    }
-
-    private void setArchivedAt(OffsetDateTime archivedAt) {
-        this.archivedAt = archivedAt;
-    }
-
-    private Integer getLoyaltyPoints() {
-        return loyaltyPoints;
-    }
-
-    private void setLoyaltyPoints(Integer loyaltyPoints) {
-        this.loyaltyPoints = loyaltyPoints;
     }
 
     @Override
